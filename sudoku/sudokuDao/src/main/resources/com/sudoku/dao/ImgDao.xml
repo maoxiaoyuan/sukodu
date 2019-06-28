@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.ImgDao">
+
+    <resultMap id="img" type="Img">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="houseId" column="house_id" javaType="Integer"/>
+        <result property="title" column="title" javaType="String"/>
+        <result property="smallTitle" column="small_title" javaType="String"/>
+        <result property="imgPath" column="img_path" javaType="String"/>
+        <result property="date" column="date" javaType="java.util.Date"/>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="java.util.List" useGeneratedKeys="false">
+        insert into house_img(title,small_title,img_path,house_id,date)values
+        <foreach collection="list" item="img" separator=",">
+           (#{img.title},#{img.smallTitle},#{img.imgPath},#{img.houseId},#{img.date})
+        </foreach>
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from house_img where id =#{id}
+    </delete>
+
+    <select id="selectAll" parameterType="Integer" resultMap="img">
+        select * from house_img where house_id=#{houseId}
+    </select>
+
+    <select id="selectTitles" parameterType="Integer" resultMap="img">
+        select DISTINCT title,small_title from house_img where house_id=#{houseId}
+    </select>
+</mapper>

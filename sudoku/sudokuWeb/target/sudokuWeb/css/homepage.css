@@ -1,0 +1,94 @@
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,li{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+  color:seagreen !important;
+}
+
+
+
+/* 夏季特惠房源,带有ideas的是与“夏季游玩灵感”相同的样式,带hot的是“热门目的地” ,带story的是与故事有关的*/
+#discount{
+	border:1px solid gainsboro;
+	border-radius: 10px;
+	/* background: gainsboro; */
+	margin-top: 100px;
+}
+
+
+
+
+#ideas{
+	/* border:1px solid red; */
+	margin-top: 200px;
+	background: lightseagreen;
+	border-radius: 5px;
+}
+
+
+
+#hot{
+	border:2px solid wheat;
+	/* background:#BCE8F1; */
+	margin-top: 200px;
+	border-radius: 10px;
+}
+
+
+
+#story{
+	margin-top: 200px;
+	background-color:#EFEFEF;
+	border-radius: 10px;
+}
+
+/* 寻找更多 */
+#discount>a,#hot>a,#ideas>a,#story>a{
+	width: 100%;
+	text-align: center;
+	font-size:14px;	
+	font-weight:540;
+	color:black;
+	
+	margin-top: 20px;
+	margin-bottom: 25px;
+	
+	display: inline-block;
+}
+
+
+#ideas > a {	
+	color:whitesmoke;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

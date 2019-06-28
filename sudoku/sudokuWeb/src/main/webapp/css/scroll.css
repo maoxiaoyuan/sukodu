@@ -1,0 +1,16 @@
+
+
+/* 大图滚动 */
+.carousel .item {
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+}
+.carousel .item .carousel ol {
+  margin-bottom: 33px;
+}
+.carousel .item img {
+  width: 100%;
+  height:100%;
+}
+

@@ -1,0 +1,18 @@
+/* 输入城市进行查询 */
+.search{
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+.search .form-group{
+/* 	border: 1px solid green; */
+}
+.search .form-group input,
+.search .form-group button {
+	/* border: 1px solid red; */
+  height: 49px;
+}
+.search .form-group button {
+  border: 2px solid #1B6D85 ;
+	background: #1B6D85;
+	color:white;
+}

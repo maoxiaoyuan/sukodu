@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.HouseResourceDao">
+
+    <resultMap id="houseResource" type="HouseResource">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="houseId" column="house_id" javaType="Integer"/>
+        <result property="houseType" column="house_type" javaType="String"/>
+        <result property="rentType" column="rent_type" javaType="String"/>
+        <result property="maxRoomer" column="max_roomer" javaType="Integer"/>
+        <result property="roomNumber" column="room_number" javaType="Integer"/>
+        <result property="bedNumber" column="bed_number" javaType="Integer"/>
+        <result property="price" column="price" javaType="Double"/>
+        <result property="sevenDiscount" column="seven_discount" javaType="Float"/>
+        <result property="monthDiscount" column="month_discount" javaType="Float"/>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="HouseResource">
+        insert into house_resource (house_id,house_type,rent_type,max_roomer,room_number,bed_number,price,seven_discount,month_discount)
+                    values (#{houseId},#{houseType},#{rentType},#{maxRoomer},#{roomNumber},#{bedNumber},#{price},#{sevenDiscount},#{monthDiscount})
+    </insert>
+
+    <update id="update" parameterType="HouseResource">
+        update house_resource set house_id={houseId},house_type=#{houseType},rent_type=#{rentType},max_roomer=#{maxRoomer},room_number=#{roomNumber},
+                              bed_number=#{bedNumber},price=#{price},seven_discount=#{sevenDiscount},month_discount=#{monthDiscount} where id = #{id}
+    </update>
+
+    <update id="updatePrice" parameterType="Integer">
+        update house_resource set price=#{price} where id =#{id}
+    </update>
+
+    <select id="selectById" parameterType="Integer" resultMap="houseResource">
+        select * from house_resource where id=#{id}
+    </select>
+
+    <select id="selectByHouseId" parameterType="Integer" resultMap="houseResource">
+        select * from house_resource where house_id=#{houseId}
+    </select>
+
+
+
+</mapper>

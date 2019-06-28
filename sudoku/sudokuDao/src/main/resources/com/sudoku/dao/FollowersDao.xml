@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sudoku.dao.FollowersDao">
+
+    <resultMap id="followersResultMap" type="Followers">
+        <id property="foid" column="id" javaType="Integer"></id>
+        <association property="userFollow" column="user_follow" javaType="User"
+                     select="com.sudoku.dao.UserDao.selectById"></association>
+        <association property="userFollower" column="user_follower" javaType="User"
+                     select="com.sudoku.dao.UserDao.selectById"></association>
+    </resultMap>
+    <!--A的关注列表-->
+    <select id="selectFollowById" parameterType="Integer" resultMap="followersResultMap">
+		select * from followers where user_follow=#{id}
+	</select>
+    <!--A的粉丝列表-->
+    <select id="selectFollowersById" parameterType="Integer" resultMap="followersResultMap">
+		select * from followers where user_follower=#{id}
+	</select>
+    <!--A的互粉列表-->
+    <select id="selectBothFollowById" parameterType="Integer" resultMap="followersResultMap">
+		select * from followers
+        where user_follow=#{id}
+        and user_follower in(
+            SELECT user_follow
+            from followers
+            where user_follower=#{id}
+)
+	</select>
+    <!--A是否关注了B-->
+    <select id="selectFollowByUserId" parameterType="Followers" resultType="Integer">
+		select count(*) from followers where user_follow=#{userFollow.id} and user_follower=#{userFollower.id}
+	</select>
+    <!--A关注了B-->
+    <insert id="insertFollowers" parameterType="Followers" useGeneratedKeys="true" keyProperty="foid">
+		insert into followers(user_follow,user_follower) values(#{userFollow.id},#{userFollower.id});
+	</insert>
+    <!--A取关了B-->
+    <delete id="deleteFollowers" parameterType="Followers">
+        delete from followers where user_follow=#{userFollow.id} and user_follower=#{userFollower.id}
+    </delete>
+</mapper>

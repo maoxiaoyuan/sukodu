@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sudokuWeb:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee317873-2ce8-4a3d-abcb-12157ca8b161" name="Default Changelist" comment="九宫格民宿">
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/BookDateBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/CommentBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/FavoritesBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/FollowersBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/InfoBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/LikesBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/StoryBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/StoryDetailBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/BookDateBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/CommentBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/FavoritesBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/FollowersBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/InfoBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/LikesBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/StoryBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/StoryDetailBizImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/util/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/util/CodeBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/BookDateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/CommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/FavoritesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/FollowersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/InfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/LikesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/StoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/StoryDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/BookDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Favorites.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Followers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Likes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Story.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/StoryDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/BookDateDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/CommentDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/FavoritesDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/FollowersDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/InfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/LikesDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/StoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/StoryDetailDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/BookDateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/InfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/StoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/WebSocketUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/chufang-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/chunfengji-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/comments.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/dengpao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/dianzan_after.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/dianzan_before.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/dianzan_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/dianzan_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/life-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/shoucang_after.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/shoucang_before.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/small-bizhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/small-logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/small-logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/small-logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/small-logo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/wlan-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/xifalu-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/yushi-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/匿名.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/img/邓伦.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/js/showstory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/house_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/pass-checked.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/select-house.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/wait-checked.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/Date.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/communicate_host.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/editstory.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/house_order_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/house_order_wait.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/showstory.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/stories.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/story.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/storyCenter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/storyContent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/storyHead.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/column.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/css3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/email.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/css/var.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/demo_fontclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/demo_symbol.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/demo_unicode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/l-line-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/l-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/login/login_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/login/login_line.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/login/yzm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/images/yuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/js/module/dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/js/module/formate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/js/module/tool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/laydate/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/laydate/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/loading-1-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/css/modules/layer/default/loading-4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/dest/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/admin.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/avatar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/column.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/comment.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/css3.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/email.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/login.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/main.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/page.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/panel.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/reset.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/var.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/less/welcome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/chord.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/eventRiver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/force.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/k.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/radar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/scatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/treemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/venn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/chart/wordCloud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/echarts-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/echarts/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/anchor/anchor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/attachment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/attachment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/attachment/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/background/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/background/background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/background/background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/background/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/background/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/chart.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/charts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/emotion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/emotion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/emotion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/gmap/gmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/help/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/help/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/help/help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/image.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/image/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/internal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/link/link.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/map/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/map/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/music/music.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/music/music.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/music/music.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/preview/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/spechars/spechars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/spechars/spechars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/table/dragicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/table/edittable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/table/edittable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/table/edittable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/table/edittd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/table/edittip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/images/pre0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/images/pre1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/images/pre2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/images/pre3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/images/pre4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/template/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/video/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/webapp/webapp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/addimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/deletedisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/deleteenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/listbackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/en/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/zh-cn/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/php/Uploader.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/php/action_crawler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/php/action_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/php/action_upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/php/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/php/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/css/ueditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/dialogbase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/anchor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/arrow_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/arrow_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/button-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/charts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/cursor_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/cursor_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/filescan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/highlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/icons-all.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/loaderror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/lock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/sortable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/sparator_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/videologo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/word.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/default/images/wordpaste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/themes/iframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/video-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/video-js.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/video-js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/ueditor.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/ueditor.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/ueditor.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/ueditor.parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/static/admin/lib/ueditor/ueditor.parse.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/java/controller/front/FrontController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/java/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/java/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/java/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/java/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/java/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spy.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/HouseBasicInfoBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/HouseBasicInfoBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/HouseOrderBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/HouseOrderBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/ImgBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/ImgBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/HouseBasicInfoBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/HouseBasicInfoBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/HouseOrderBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/HouseOrderBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/ImgBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/ImgBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/HouseBasicInfoBiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/HouseBasicInfoBiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/HouseOrderBiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/HouseOrderBiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/ImgBiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/ImgBiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/impl/HouseBasicInfoBizImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/impl/HouseBasicInfoBizImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/impl/HouseOrderBizImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/impl/HouseOrderBizImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/impl/ImgBizImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuBiz/target/classes/com/sudoku/biz/impl/ImgBizImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/HouseBasicInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/HouseBasicInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/HouseResourceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/HouseResourceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/ImgDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/ImgDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Facility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseBasicInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseBasicInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Img.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Img.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseBasicInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseBasicInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseResourceDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseResourceDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/ImgDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/ImgDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/src/main/resources/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/src/main/resources/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/META-INF/sudokuDao.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseBasicInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseBasicInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseBasicInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseBasicInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseResourceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseResourceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseResourceDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/HouseResourceDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/ImgDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/ImgDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/ImgDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/ImgDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/Facility.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/Facility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseBasicInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseBasicInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/HouseResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/Img.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/Img.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/com/sudoku/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuDao/target/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuDao/target/classes/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/DefaultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseBasicInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseBasicInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseImgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseImgController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/SubmitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/SubmitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/global/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/global/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/FileUploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/FileUploadUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/SavePathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/SavePathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/resources/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/resources/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/homepage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_photo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_photo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/sudokuWeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/META-INF/sudokuWeb.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/DefaultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseBasicInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseBasicInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseImgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseImgController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/HouseOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/SubmitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/controller/SubmitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/global/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/global/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/util/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/util/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/util/FileUploadUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/util/FileUploadUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/util/SavePathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/com/sudoku/util/SavePathUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/classes/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/classes/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/META-INF/sudokuWeb.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/DefaultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseBasicInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseBasicInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseImgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseImgController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/HouseOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/SubmitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/controller/SubmitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/global/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/global/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/util/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/util/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/util/FileUploadUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/util/FileUploadUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/util/SavePathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/com/sudoku/util/SavePathUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/classes/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/lib/sudokuBiz-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/lib/sudokuBiz-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/lib/sudokuDao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/WEB-INF/lib/sudokuDao-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/homepage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/view_house_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/view_house_detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/view_house_photo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/jsp/userPages/view_house_photo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/04987a43034845d49670d1f0ccc0b93f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/09652dc066c241eebfd0449e7e06174f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/1d29eb61a4aa4ac0b23b88eeea099aef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/1fed19de379444fda4d3d8ffe9581082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/20b63fafca40426e9d0456aacad88fd5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/3761cacb747347ad8fa07b995f8265e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/460e23175b464c2199f8af569009896a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/5138498fcfcf4196b5fd20aba4ff38fa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/5164ffd5751d4458913dac64b75af6a0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/52880ea3028b4b06aae5102f679e6eb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/5304cdb66409474a8f709067876e6b3b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/53454ccb5d8c474ba8df0c007a2ffb1b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/53457573a8fb423787fa5da14044c26a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/5cd27d5e89ad45d9b0c655ae8e387de2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/603b7d42a6454b9a9f8d8a7c302d6a4f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/604c82dfc89e40a88807b02d93d01577.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/6a9f862fb25d456d9b326009910c485a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/6ab461acfe314d528c07fd7a80dbbf51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/6ba12a35311c42d694ee44198c729613.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/731a6950405745ca999f053bfd2f61b0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/7d53c84615424bce83d22d07f3ac3162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/7e3f3ed670784ce3be5bc930eb9348c0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/8a9368c0fe6349ef9414981df00ad576.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/8b072db616c04fb391643f753b6b006d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/8d3734bf9dbb4874a5ca4ee638296da7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/8d95ed321d584cd988a154d4d39026d7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/955bd5b48df94128b61699b4f32e6247.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/9e226eea327948c988f40cd59f207532.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/a2d2a07ec40e4daa8f670749358a38e5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/aa866ba2763e427faa7d8c6bf1cee8ee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/b767a73014964ddd9ed0530f581aaf9b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/c603c4e1f68b41539e2524484f979821.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/cae3a3e15a9f4e25b4a39fbc2626827b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/d21961d81ca4498d804787e8efcecacb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/da968f92ce1643099d0787307532fc13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/dc47ec6340ed44869078987c383b32e8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/dc871a07683543b78c549f84e2948415.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/ea76b7293f2c4159bedee8417e9ef196.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/ec9f307d3a23439489dc9575517abd73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/ef0d0bd91b0e4082be83c139e32d1265.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/certificate/efb0d5d15e224c1c95eb2d8467fb6b33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/30cd0b7301c6490d80cd27163fdfddec.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/3b04128369144df3b9f483f5409b1642.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/43b901ef4d544096af4d8f6d5b5dd023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/4897d0eadc5c47c4a7abf425f36e68ee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/5da02bd6b8d44f37a85eed78a81af797.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/80a9932396124254b7fadf9159a796ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/ea83ebd00b654fefb7200462d4724ede.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/headPortrait/eb617b2d83804cf998970f97e3608447.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/0132022b7fe649f4938d069bae7fb6c9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/025665f84566425cbf00d173096d6fc7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/04e80ac04916434ca891aad9f24db450.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/053ad211f2954fa9812e35537d2f574a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/07836b2075ac4fdfbc388ff39cd82bb5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/078c5fd102e747f89416c6f09a375694.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/0a2c594748094b9ca1ee283abce476b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/0b26ca03f01947ddb0733ac658b9079f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/0c5e3a8f316a43cb94ed2430f2d2345b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/0d5dfb4aa8f1407d9691c0d99e06ee9c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/0ec114c7dd474050bc9fda524d1dca5f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/103f1b8b6cce440699f6fa5aebbe97df.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/11bb668cf74b47019ef67a2e486daae5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/1365f977f24544589f1a115e6ba0220b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/14eab31e4cb44c9e8c470d56767bafc4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/190a11ff8f054509995869cf56e83499.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/1967a7be14664c279afbfee4034f9cf5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/1af65fc3de07439aaddeaf822cbbd49d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/1b2bf7d8433a42f195bf1b98947f16d0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/1c868c4c0e3e44418fea3cbba97d0de2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/1e813e931d804458bcfb7408c8c202e8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/21a139566998462fa330b09b8c5f3e9d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/22c1959a9aba40b78373e5fd9b7bf230.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/2a4e7508e8574187aeef4f0464cc7164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/2cd857cb93d747e8b9c1eb57f939451d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/2e7b09dcd0434472a2c10d93c2a813d0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/2fc83093662144aba4b84f940a5373cc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/30ca07a2efaf44e7b33da670a089e43f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/30f1674f855841ca834265d5b68b4862.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/35e75d051206493895b0a4737f0fbfd1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/37a0e07976e44da79478846da9e921c9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/3a0b7878764b4f6ead3fd998e91637b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/3aa1aa88cb2e4b4dbc6c4906f4686eca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/3c11524a80064466bc1d982ad2bf7d2b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/3c45aa12e5554befa11941b00a0c90b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/4050b960285d4d38b0f48b9aafe865ee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/40c74f7c2d2943fda5cdf840922cd7e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/42346114ebce4d0f93e2331fbbabaa4a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/432c81336399422b98f612ad3ae33dbf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/469daafb20a24bf6838cd0432bc9d3b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/4c86218640aa46b691f935456fe4590a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/4d1a61bc93d149199adfc80d15a977b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/4ef0f97c371943ef847e07021e330a8d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/4fa875e9468a489a8aa9d0a28b755265.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/504fd23f5b7a4934badbd3e735ccdec2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5364a3e7a2784b9cb4a0616bb7d302d3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/538e094da74249179eeb9f3a25148108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/571e05c4492b458c9369b9000d1359b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/58accab549f84a6786310ccf8e52cf1d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/58ce467dc79b46619f0cae275b4cf3c9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5970ecb6061045d3b9a366328b76f288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5a9c08d99dc7441084d1a074e41f94ae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5abfe005e30b4237b5df83f87eb76c72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5b24f364735b412fbd6a0ef3961e3b63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5b9e162fcf2446d08fd0b8966b65d552.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/5eb12801a9e449f697ed8989dba8a530.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/61cc368e7d9b4d73a05eb9f033ad4589.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/644362dff01549b4ac6bb209793cc6f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/64bbd0f28f1545748b237a9c121eb4fb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/64c2910da099450fb1a7d6b71816ead8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/657e159dde854e84a28c50a39f7bf016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/65bd4c3eea214793bd086bfcd0281fe3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/6fad75932381473a9b27d5f0c23a0bc2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/6fb9a64cdd104727acc950cd492c7b38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/71cae8cd40054deab83bc32c7b4d4e53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/74d2c309e88749e285177650eb4281a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/74d9f7173f204f6b836a0f759675518b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/754b497436ca44e1bbc1ceeca804bff0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/7902aa4fd1564aae99dada86641a0956.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/79617426961b4e52bb645eed2be6c718.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/7a09c23cc1424b90b4513cec3ba83ff8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/7ba595588c45411ba32210f51093c0f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/7bea69204bb04b49925bee01b584f80b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/83a25da4688244209330660e6e28d797.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/83a5fa54d525415cb24c030bbaf2a956.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/85ddef13137941b6b4f80c08a7292c8a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/8690594ba3934f739c4bf2a6756a2dd6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/894d9c370be44c46b17bcdbef8df0fad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/89da62f72fd0465d93bcd5e1f41abd87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/8d92ab950f44433b8816992faa79d84d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/8e421f52a0334d11b903adf83bc28a93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/8f9360b9ce2643119f87861dd32d5f56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/926e7a3d29c44112adc97469df541e87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/96fb5c992ae34f42b95d000e07567f4f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/975428576bcd4d1b90a01ffd3bf6b9c7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/999a5134ad3440a1ad4fffd89a574151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/9e54260eb28e4645836217e2b6f2b9d6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/9f86a3826d554d5b99bd768b77406ab6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/a10b8ddf72c142f3a957c43d95b07005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/a2238f259db84a308c9112f8d0f39ceb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/a3fd88a1f046418e8c7eaa2db44364fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/a53c6eb31ca24b1c8a3b81d9f4c534ce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/a9f32216cbd04e939625dc7260443a6a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ac387a21891347ceb04f8983d57fcde8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/addd01e4e2254cc4b2781b8a3e57d001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/afafaa5255ab4c6898a35a729a7bca9c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/b0649f7df53f43aca9a062021c0319ac.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/b086e196c86447e6849362a8614b6745.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/b560b96cd2c947efacae5f2294927c13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/b5c4b08481dc46ecb06017f68da4f303.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/b6cc0e7bb4d64635a33492bbf8701a4b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/b9eb24bf761a4a21b1691870c95acd67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ba572f25ff624412b563568cb3e91759.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/baeb75760b4547bda51661bb4fc75b1a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/be21d17859304112a8fcfa28dc1756ca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/bf77d3e955974855826a7ee94bec6561.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/c3bd35a7fd774a38ba103cd5c2b4b10b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/c4058e7ba713490d88a6f43ab16bf579.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/c54b9ff9c38b49fb9e60b6aa9418484c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/c638322615f943fa932a413a990c15cb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/c6e22b1d8b8a4d059abe2da4bb11cc66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/cbe9fee35ccc4849a44c5982dd71a3b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ccc5758ec791433db3bf5f9d766074c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/cd5abadc539f4d52ab2e15031941ab03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ce7fa1b62694400586007af59df71dbf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/d150d9d7b9054b69a8c5dc44bafcd18b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/d3faa0003ec24a03ab3b453228c8347e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/d4ce2721eaa44fed90461d1fb2965db8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/daf6439afe3b48178614bc0c19b6f4e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/df6238b75f134d2d9b5451be22c24e72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/e0aaaf3bb75646f0b20d1e2b052e67c8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/e26f01731a2542c8acf39f1cb48685ba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/e42eee7d4d7c40d6b3aa101ac7972ed2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/e48464e4bab34ab8a4ce5b9758b64e25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/e7f9b54bd0fd4b4f89997424dc1721ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ecf37bbb12b34dcfbcce88e9f27a620e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ed1ec7f9931d4a98915f95aff55b3fbb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/edeaafd7aea84bab9b790e136cd8995c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ef19436d975c473a99624203e7937f45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f200babf4d864288b2dd2c3f31d49306.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f23950a407b54b1fa030cad5320c14d3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f313fb748b4a4751becd7d2cd75aab4a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f51716cab9994b72ad2688f9b49821a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f527291893f74b42a439895589ec6115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f7f2874c19c54e6db95c1d12e2d48d80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/f87904beea3f4294a34527c445720383.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/fa6189245fd844d09173b87ab1c92fb5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/fa767c63e0a34293a883b70e0ea859ea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/fb3bae66ae104f77870a0efb54a27065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/fb71fd6f55bd4a6897259d71ebab3314.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/fe2baf4a42e34817b3cfb20c3bbe6a53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/sudokuWeb/upload/housePhotos/ff8920720b1746599a5c5b5bfa7cba00.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudokuWeb/target/test-classes/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/sudokuWeb/target/test-classes/test.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/sudokuDao/target/" />
+    <ignored path="$PROJECT_DIR$/sudokuBiz/target/" />
+    <ignored path="$PROJECT_DIR$/sudokuWeb/target/" />
+    <ignored path="$PROJECT_DIR$/Web/target/" />
+    <ignored path="$PROJECT_DIR$/service/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\Program Files\Git\cmd\git.exe" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/CommentBizImpl.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/StoryDetailDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/dao/StoryDao.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/LikesDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/SavePathUtil.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/FileUploadUtil.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/resources/spring-web.xml" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/DefaultController.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/SubmitController.java" />
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/StoryBiz.java" />
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/StoryBizImpl.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseController.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/stories.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/storyHead.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/story.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/storyContent.jsp" />
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/FavoritesBizImpl.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/storyCenter.jsp" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/FavoritesDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/CommentDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/StoryDetailBizImpl.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/FollowersDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/UserDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/FollowersBizImpl.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/StoryController.java" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/top.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/top.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseOrderController.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseOrderDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_detail.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/house_order_detail.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/house_order_wait.jsp" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/StoryDao.xml" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/editstory.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/showstory.jsp" />
+        <option value="$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/homepage.jsp" />
+        <option value="$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/HouseOrderBizImpl.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Comment.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/City.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/BookDate.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Facility.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Followers.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseDetail.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseOrder.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseResource.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Img.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Favorites.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Likes.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Story.java" />
+        <option value="$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/StoryDetail.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files\apache-maven-3.6.0-bin\repository" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.0-bin/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.0-bin\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sudokuBiz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sudokuBiz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sudokuWeb Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sudokuWeb Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="536" />
+    <option name="y" value="6" />
+    <option name="width" value="1230" />
+    <option name="height" value="1065" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="sudoku" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sudoku" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuBiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuBiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuBiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuBiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuBiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuBiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuDao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sudoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
+              <item name="sudokuWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560443958161" />
+    <property name="last_opened_file_path" value="D:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/ROOT" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\IdeaProjects\sudoku\sudokuWeb\src\main\webapp\jsp\userPages" />
+      <recent name="D:\Project\IdeaProjects\sudoku\sudokuWeb\src\main\webapp\img" />
+      <recent name="D:\Project\IdeaProjects\sudoku\sudokuWeb\src\main\webapp\js" />
+      <recent name="D:\Project\IdeaProjects\sudoku\sudokuWeb\src\main\java\com\sudoku\controller" />
+      <recent name="D:\Project\IdeaProjects\sudoku\sudokuDao\src\main\resources\com\sudoku\dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sudoku.controller" />
+      <recent name="com.sudoku.dao" />
+      <recent name="com.sudoku.biz.impl" />
+      <recent name="com.sudoku.global" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\IdeaProjects\sudoku\sudokuWeb\src\main\webapp\jsp\userPages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.34">
+    <configuration name="cityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudokuDao" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="cityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cityTest.selectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudokuDao" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="cityTest" />
+      <option name="METHOD_NAME" value="selectTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudokuWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testHouse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudokuWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testHouse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudokuWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.34" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sudoku/house/houseList" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="sudokuWeb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/sudoku" />
+          </settings>
+        </artifact>
+        <file path="%IDEA_RUN:TOMCAT_HOME%/webapps/ROOT">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ROOT" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_sudoku" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59839" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="sudokuWeb:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.cityTest" />
+      <item itemvalue="JUnit.cityTest.selectTest" />
+      <item itemvalue="JUnit.test.testException" />
+      <item itemvalue="JUnit.test.testHouse" />
+      <item itemvalue="JUnit.test.testOrder" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.34" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.testException" />
+        <item itemvalue="JUnit.test.testHouse" />
+        <item itemvalue="JUnit.test.testOrder" />
+        <item itemvalue="JUnit.cityTest" />
+        <item itemvalue="JUnit.cityTest.selectTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee317873-2ce8-4a3d-abcb-12157ca8b161" name="Default Changelist" comment="" />
+      <created>1554706794078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554706794078</updated>
+      <workItem from="1554706801455" duration="15675000" />
+      <workItem from="1554723839730" duration="1093000" />
+      <workItem from="1554807682433" duration="582000" />
+      <workItem from="1554872706946" duration="7939000" />
+      <workItem from="1554889918872" duration="5854000" />
+      <workItem from="1554906749294" duration="4561000" />
+      <workItem from="1554961294579" duration="5403000" />
+      <workItem from="1554980170558" duration="2050000" />
+      <workItem from="1554982422765" duration="627000" />
+      <workItem from="1554992251251" duration="10000" />
+      <workItem from="1555036253959" duration="3000" />
+      <workItem from="1555048440206" duration="2017000" />
+      <workItem from="1555065822771" duration="854000" />
+      <workItem from="1555222320973" duration="9524000" />
+      <workItem from="1555237910163" duration="11454000" />
+      <workItem from="1555295105529" duration="12164000" />
+      <workItem from="1555316068085" duration="19253000" />
+      <workItem from="1555383778224" duration="3753000" />
+      <workItem from="1555406886382" duration="12912000" />
+      <workItem from="1555461840167" duration="1552000" />
+      <workItem from="1555463681885" duration="14396000" />
+      <workItem from="1555493813392" duration="744000" />
+      <workItem from="1555495071113" duration="199000" />
+      <workItem from="1555495758325" duration="4060000" />
+      <workItem from="1555512897836" duration="3513000" />
+      <workItem from="1555568970503" duration="19705000" />
+      <workItem from="1555642637691" duration="854000" />
+      <workItem from="1555747286407" duration="1267000" />
+      <workItem from="1555754276817" duration="276000" />
+      <workItem from="1555847891408" duration="186000" />
+      <workItem from="1555900075802" duration="1816000" />
+      <workItem from="1555902415460" duration="3095000" />
+      <workItem from="1555908483692" duration="981000" />
+      <workItem from="1556172654470" duration="1847000" />
+      <workItem from="1556175232323" duration="36000" />
+      <workItem from="1556245116218" duration="5716000" />
+      <workItem from="1556255727453" duration="335000" />
+      <workItem from="1556256131410" duration="345000" />
+      <workItem from="1556256539570" duration="362000" />
+      <workItem from="1556257849588" duration="2707000" />
+      <workItem from="1556260789559" duration="1576000" />
+      <workItem from="1556289293260" duration="581000" />
+      <workItem from="1556292957451" duration="1450000" />
+      <workItem from="1556331462450" duration="2323000" />
+      <workItem from="1556870205767" duration="3131000" />
+      <workItem from="1556877082479" duration="554000" />
+      <workItem from="1556878663406" duration="2440000" />
+      <workItem from="1557041899224" duration="2000" />
+      <workItem from="1557051871554" duration="577000" />
+      <workItem from="1557053010052" duration="4000" />
+      <workItem from="1557133865197" duration="48000" />
+      <workItem from="1557218464047" duration="368000" />
+      <workItem from="1557226491774" duration="19000" />
+      <workItem from="1557280072756" duration="3723000" />
+      <workItem from="1557293305600" duration="2217000" />
+      <workItem from="1557312669066" duration="14256000" />
+      <workItem from="1557380555235" duration="8000" />
+      <workItem from="1557381023709" duration="11150000" />
+      <workItem from="1557392598499" duration="4799000" />
+      <workItem from="1557401741235" duration="374000" />
+      <workItem from="1557403245468" duration="450000" />
+      <workItem from="1557454924694" duration="559000" />
+      <workItem from="1557458571514" duration="1378000" />
+      <workItem from="1557470529097" duration="6845000" />
+      <workItem from="1557478358928" duration="13781000" />
+      <workItem from="1557539751940" duration="10213000" />
+      <workItem from="1557582065753" duration="6000" />
+      <workItem from="1557624289204" duration="2605000" />
+      <workItem from="1557635491408" duration="26575000" />
+      <workItem from="1557714076034" duration="7546000" />
+      <workItem from="1557732435057" duration="2720000" />
+      <workItem from="1557735480555" duration="1309000" />
+      <workItem from="1557736945046" duration="2197000" />
+      <workItem from="1557739529959" duration="3676000" />
+      <workItem from="1557746320708" duration="979000" />
+      <workItem from="1557747449804" duration="5117000" />
+      <workItem from="1557759230842" duration="2418000" />
+      <workItem from="1557808423512" duration="18675000" />
+      <workItem from="1557883913765" duration="915000" />
+      <workItem from="1557885158042" duration="10408000" />
+      <workItem from="1557900637588" duration="2741000" />
+      <workItem from="1557914917103" duration="7878000" />
+      <workItem from="1557968780826" duration="591000" />
+      <workItem from="1557992918704" duration="10408000" />
+      <workItem from="1558008244422" duration="1696000" />
+      <workItem from="1558013750148" duration="2663000" />
+      <workItem from="1558017421739" duration="843000" />
+      <workItem from="1558018503137" duration="238000" />
+      <workItem from="1558018829679" duration="1021000" />
+      <workItem from="1558021414061" duration="597000" />
+      <workItem from="1558059624841" duration="696000" />
+      <workItem from="1558061267700" duration="2752000" />
+      <workItem from="1558070631711" duration="13196000" />
+      <workItem from="1558227177497" duration="2309000" />
+      <workItem from="1558230713144" duration="349000" />
+      <workItem from="1558231336974" duration="5068000" />
+      <workItem from="1558252754824" duration="6453000" />
+      <workItem from="1558321932460" duration="1199000" />
+      <workItem from="1558323501782" duration="1479000" />
+      <workItem from="1558349870509" duration="5583000" />
+      <workItem from="1558359398461" duration="3090000" />
+      <workItem from="1558408243111" duration="542000" />
+      <workItem from="1558410925987" duration="3276000" />
+      <workItem from="1558430074869" duration="327000" />
+      <workItem from="1558487890959" duration="387000" />
+      <workItem from="1558488541021" duration="847000" />
+      <workItem from="1558489573200" duration="954000" />
+      <workItem from="1558492647861" duration="76000" />
+      <workItem from="1558519664423" duration="3596000" />
+      <workItem from="1558524032628" duration="9171000" />
+      <workItem from="1558576218768" duration="636000" />
+      <workItem from="1558598572572" duration="29001000" />
+      <workItem from="1558697178052" duration="2000" />
+      <workItem from="1558697992095" duration="5294000" />
+      <workItem from="1558745066336" duration="255000" />
+      <workItem from="1558765715932" duration="5649000" />
+      <workItem from="1558773124482" duration="11616000" />
+      <workItem from="1558832424460" duration="6366000" />
+      <workItem from="1558852404636" duration="4537000" />
+      <workItem from="1558860771607" duration="11459000" />
+      <workItem from="1558923452484" duration="9566000" />
+      <workItem from="1558936687058" duration="1586000" />
+      <workItem from="1558938558770" duration="1560000" />
+      <workItem from="1558940325895" duration="815000" />
+      <workItem from="1559100647479" duration="22982000" />
+      <workItem from="1559194131867" duration="23642000" />
+      <workItem from="1559226873488" duration="2436000" />
+      <workItem from="1559266075997" duration="2200000" />
+      <workItem from="1559551352666" duration="1000" />
+      <workItem from="1559892048392" duration="7761000" />
+      <workItem from="1559905576377" duration="2764000" />
+      <workItem from="1559957682705" duration="7265000" />
+      <workItem from="1559985558846" duration="8516000" />
+      <workItem from="1560154738433" duration="11141000" />
+      <workItem from="1560221763705" duration="6466000" />
+      <workItem from="1560252584843" duration="218000" />
+      <workItem from="1560253283788" duration="2939000" />
+      <workItem from="1560261400619" duration="5998000" />
+      <workItem from="1560297886069" duration="16433000" />
+      <workItem from="1560317922408" duration="4544000" />
+      <workItem from="1560347124854" duration="14485000" />
+      <workItem from="1560388634718" duration="15897000" />
+      <workItem from="1560430826317" duration="12213000" />
+      <workItem from="1560472512419" duration="8025000" />
+      <workItem from="1560504122924" duration="262000" />
+    </task>
+    <task id="LOCAL-00001" summary="发布房源dao层文件">
+      <created>1555903766322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555903766322</updated>
+    </task>
+    <task id="LOCAL-00002" summary="发布房源">
+      <created>1555904006123</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555904006124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="发布房源">
+      <created>1558015538686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558015538686</updated>
+    </task>
+    <task id="LOCAL-00004" summary="九宫格民宿">
+      <created>1558018640035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558018640035</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="test_testOrder - 2019.05.10 at 16h 28m 17s.xml">
+      <configuration name="test.testOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testHouse - 2019.05.12 at 18h 45m 21s.xml">
+      <configuration name="test.testHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testHouse - 2019.05.29 at 20h 21m 17s.xml">
+      <configuration name="test.testHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testHouse - 2019.05.29 at 20h 22m 09s.xml">
+      <configuration name="test.testHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testHouse - 2019.05.29 at 20h 31m 43s.xml">
+      <configuration name="test.testHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testHouse - 2019.05.29 at 21h 04m 27s.xml">
+      <configuration name="test.testHouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testException - 2019.05.29 at 21h 04m 52s.xml">
+      <configuration name="test.testException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testException - 2019.05.29 at 21h 05m 42s.xml">
+      <configuration name="test.testException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testException - 2019.05.29 at 21h 07m 39s.xml">
+      <configuration name="test.testException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testException - 2019.05.29 at 23h 12m 01s.xml">
+      <configuration name="test.testException" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="702248000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21782842" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49798927" weight="0.32719547" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5073727" side_tool="true" weight="0.30169973" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.35835695" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.04249292" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49262735" visible="true" weight="0.19688386" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.5226629" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.04249292" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="发布房源dao层文件" />
+    <MESSAGE value="发布房源" />
+    <MESSAGE value="九宫格民宿" />
+    <option name="LAST_COMMIT_MESSAGE" value="九宫格民宿" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sudokuDao/src/main/test/cityTest.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/UserBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/FollowersBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_photo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/FollowersDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/StoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="343" column="5" lean-forward="true" selection-start-line="343" selection-start-column="5" selection-end-line="343" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseBasicInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/houseDetail_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#104#111#1" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/houseResource_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/ImgBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/house_order_wait.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/StoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/house_order_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="150" column="7" lean-forward="true" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/houseSubmit.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/houseBasicInfo_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="331" column="7" selection-start-line="331" selection-start-column="7" selection-end-line="331" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/view_house_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="503" column="15" selection-start-line="503" selection-start-column="15" selection-end-line="503" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/HouseOrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/adminPages/pass-checked.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/editstory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="93" column="72" lean-forward="true" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="72" />
+          <folding>
+            <element signature="e#39#46#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/userPages/showstory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="345" column="36" lean-forward="true" selection-start-line="345" selection-start-column="36" selection-end-line="345" selection-end-column="36" />
+          <folding>
+            <element signature="e#4678#6177#0#HTML" />
+            <element signature="e#6182#14448#0#HTML" />
+            <element signature="e#14454#16986#0#HTML" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/jsp/homepage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="203" column="60" lean-forward="true" selection-start-line="203" selection-start-column="60" selection-end-line="203" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/HouseOrderBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuBiz/src/main/resources/spring-biz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/resources/com/sudoku/dao/CityDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/resources/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuBiz/src/main/java/com/sudoku/biz/impl/BookDateBizImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/resources/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/global/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuWeb/src/main/java/com/sudoku/controller/HouseOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/BookDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Facility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Story.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Likes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/StoryDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Img.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/HouseBasicInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Followers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sudokuDao/src/main/java/com/sudoku/entity/Favorites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>sudokuWeb:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>sudokuDao</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.2.56</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.HouseBasicInfoDao">
+
+    <resultMap id="HouseBasicInfo" type="HouseBasicInfo">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="landlordId" column="landlord_id" javaType="Integer"/>
+        <result property="province" column="province" javaType="String"/>
+        <result property="town" column="town" javaType="String"/>
+        <result property="city" column="city" javaType="String"/>
+        <result property="detailAddress" column="detail_address" javaType="String"/>
+        <result property="title" column="title" javaType="String"/>
+        <result property="travelInfo" column="travel_information" javaType="String"/>
+        <result property="introduce" column="introduce" javaType="String"/>
+        <result property="certificateNumber" column="house_proprietary_certificate_number" javaType="String"/>
+        <result property="certificateImg"  column="house_proprietary_certificate_img" javaType="String"/>
+        <result property="status"  column="status" javaType="Integer"/>
+        <result property="registerTime"  column="register_time" javaType="java.util.Date"/>
+
+        <collection property="facility" ofType="Facility" resultMap="com.sudoku.dao.FacilityDao.facility"></collection>
+        <collection property="houseResource" ofType="HouseResource" resultMap="com.sudoku.dao.HouseResourceDao.houseResource"></collection>
+        <collection property="user" ofType="User"   resultMap="com.sudoku.dao.UserDao.user"></collection>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="HouseBasicInfo">
+        insert into house_basic_information(id,landlord_id,province,city,town,detail_address,title,travel_information,introduce,house_proprietary_certificate_number,house_proprietary_certificate_img,status,register_time)
+        values (#{id},#{landlordId},#{province},#{city},#{town},#{detailAddress},#{title},#{travelInfo},#{introduce},#{certificateNumber},#{certificateImg},#{status},#{registerTime})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from house_basic_information where id =#{id}
+    </delete>
+
+    <update id="update" parameterType="HouseBasicInfo">
+        update house_basic_information set landlord_id=#{landlordId},province=#{province},city=#{city},town=#{town},detail_address=#{detailAddress},title=#{title},travel_information=#{travelInfo},introduce=#{introduce},house_proprietary_certificate_number=#{certificateNumber},
+                                        house_proprietary_certificate_img=#{certificateImg}where id = #{id}
+    </update>
+
+    <select id="selectById" parameterType="Integer" resultMap="HouseBasicInfo">
+       SELECT info.*,u.*,res.*,type.*,fac.*
+        FROM user u
+        RIGHT  JOIN house_basic_information info
+        ON u.id=info.landlord_id
+        LEFT  JOIN house_resource res
+        ON res.house_id=info.id
+        LEFT  JOIN house_type type
+        ON type.house_id=info.id
+        LEFT  JOIN house_facility fac
+        ON fac.house_id=info.id
+        where info.id=#{houseId}
+    </select>
+
+    <select id="selectByStatus" parameterType="Integer" resultMap="HouseBasicInfo">
+        SELECT info.*,u.*,res.*,type.*,fac.*
+        FROM user u
+        RIGHT  JOIN house_basic_information info
+        ON u.id=info.landlord_id
+        LEFT  JOIN house_resource res
+        ON res.house_id=info.id
+        LEFT  JOIN house_type type
+        ON type.house_id=info.id
+        LEFT  JOIN house_facility fac
+        ON fac.house_id=info.id
+        where info.status=#{status}
+    </select>
+
+    <select id="selectAll" resultMap="HouseBasicInfo">
+        SELECT info.*,u.*
+        FROM user u
+        RIGHT  JOIN house_basic_information info
+        ON u.id=info.landlord_id
+        order by info.register_time DESC
+    </select>
+
+    <select id="selectBylandlordId"  parameterType="Integer" resultMap="HouseBasicInfo">
+        SELECT info.*,u.*
+        FROM user u
+        RIGHT  JOIN house_basic_information info
+        ON u.id=info.landlord_id
+        where landlord_id=#{landlordId}
+
+    </select>
+
+    <select id="selectByCNum"   parameterType="String"  resultMap="HouseBasicInfo">
+        SELECT info.*,u.*
+        FROM user u
+        RIGHT  JOIN house_basic_information info
+        ON u.id=info.landlord_id
+        where house_proprietary_certificate_number=#{number}
+    </select>
+
+</mapper>

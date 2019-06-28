@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sudoku.dao.StoryDetailDao">
+
+    <resultMap id="storyDetailResultMap" type="StoryDetail">
+        <id property="sdid" column="id" javaType="Integer"></id>
+        <result property="likeNum" column="like_num" javaType="INTEGER"></result>
+        <result property="favoriteNum" column="favorite_num" javaType="INTEGER"></result>
+        <result property="commentNum" column="comment_num" javaType="INTEGER"></result>
+		<association property="story" column="story_id" javaType="Story"
+                     select="com.sudoku.dao.StoryDao.selectStoryById">
+		</association>
+    </resultMap>
+    <select id="selectStoryDetailByStoryId" parameterType="Integer" resultMap="storyDetailResultMap">
+		select * from story_detail where story_id = #{story.sid}
+	</select>
+	<select id="selectAllStoryDetail" resultMap="storyDetailResultMap">
+		select *
+		from story_detail
+		ORDER BY(like_num) DESC
+	</select>
+	<select id="selectStoryDetailTop" resultMap="storyDetailResultMap">
+		select *
+		from story_detail
+		ORDER BY(like_num) DESC
+		LIMIT 4
+	</select>
+	<select id="selectRelatedStoryDetail" resultMap="storyDetailResultMap">
+		select * from story_detail sd, story s
+		where sd.story_id=s.id  and  s.tour_city=#{tourCity} and s.id not like #{sid} limit 9
+	</select>
+	<select id="selectRelatedStoryDetailByHouse" resultMap="storyDetailResultMap">
+		select * from story_detail sd, story s
+		where sd.story_id=s.id  and  s.house_id=#{house.hid} and s.id not like #{sid} limit 9
+	</select>
+    <insert id="insertStoryDetail" parameterType="StoryDetail" useGeneratedKeys="true" keyProperty="sdid">
+		insert into story_detail(story_id,like_num,favorite_num,comment_num)
+		values(#{story.sid},#{likeNum},#{favoriteNum},#{commentNum})
+	</insert>
+    <update id="updateStoryDetail" parameterType="StoryDetail">
+		update story_detail
+		set like_num=#{likeNum},
+			favorite_num=#{favoriteNum},
+		    comment_num=#{commentNum}
+		where story_id=#{story.sid}
+	</update>
+	<delete id="deleteStoryDetailByStoryId" parameterType="Integer">
+        delete from story_detail where story_id=#{sid}
+    </delete>
+
+
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.CityDao">
+
+    <!--配置resultMap，id="任意"，"类型：User"-->
+    <resultMap id="city" type="City">
+        <!--属性名、字段名、java类型-->
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="pid" column="pid" javaType="Integer"/>
+        <result property="cityName" column="cityname" javaType="String"/>
+        <result property="type" column="type" javaType="Integer"/>
+        <collection property="children"  column="id" select="selectByPid"/>
+    </resultMap>
+
+
+
+    <select id="selectById" parameterType="Integer" resultMap="city">
+        select * from city where id=#{id}
+    </select>
+
+    <select id="selectByName" parameterType="String" resultMap="city">
+        select * from city where cityname=#{cityName}
+    </select>
+
+    <select id="selectByPid" parameterType="Integer" resultMap="city">
+        select * from city where pid=#{pid}
+    </select>
+
+</mapper>

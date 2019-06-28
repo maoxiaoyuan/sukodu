@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.InfoDao">
+
+    <resultMap id="info" type="Info">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="infoSend" column="info_send" javaType="Integer"/>
+        <result property="infoContent" column="info_content" javaType="String"/>
+        <result property="infoDate" column="info_date" javaType="java.util.Date"/>
+        <collection property="user" ofType="User"  resultMap="com.sudoku.dao.UserDao.user"></collection>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="Info" useGeneratedKeys="false">
+       insert into info(info_send,info_content,info_date)values
+          (#{infoSend},#{infoContent},#{infoDate})
+    </insert>
+
+
+
+    <select id="selectAll" resultMap="info">
+    SELECT u.name,info.info_content,info.info_date
+    FROM user u
+    RIGHT  JOIN info
+    ON u.id=info.info_send
+	ORDER BY info_date  DESC;
+
+    </select>
+
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.BookDateDao">
+
+    <resultMap id="bookDate" type="BookDate">
+        <id property="bookId" column="id" javaType="Integer"/>
+        <result property="orderDate" column="order_date" javaType="java.util.Date"/>
+        <result property="houseId" column="house_id" javaType="String"/>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="java.util.List" useGeneratedKeys="false">
+        insert ignore into house_book_date(order_date,house_id)values
+        <foreach collection="list" item="date" separator=",">
+            (#{date.orderDate},#{date.houseId})
+        </foreach>
+    </insert>
+
+    <delete id="delete" parameterType="String">
+        delete from house_book_date where house_id =#{houseId}
+    </delete>
+
+    <select id="selectAll" parameterType="String" resultMap="bookDate">
+        select * from house_book_date where house_id=#{houseId}
+    </select>
+
+</mapper>

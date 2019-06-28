@@ -1,0 +1,46 @@
+﻿<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启自动扫描-->
+    <context:component-scan base-package="com.sudoku.dao"/>
+    
+    <!--配置数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/sudoku?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=Asia/Shanghai"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+
+    <!--sessionFactory工厂配置-->
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--关联数据源的属性（必须写）-->
+        <property name="dataSource" ref="dataSource"></property>
+        <!--别名（可选）-->
+        <!--包com.sudoku.entity下面的类直接调用类名即可-->
+        <property name="typeAliasesPackage" value="com.sudoku.entity"></property>
+        <!-- 注意其他配置 -->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                      <value></value>
+                    </property>
+                </bean>
+            </array>
+        </property>
+
+    </bean>
+
+    <!--配置映射器接口-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sessionFactory"></property>
+        <!--扫描dao里面的接口，与映射文件关联起来，生成持久化操作对象。-->
+        <property name="basePackage" value="com.sudoku.dao"></property>
+    </bean>
+</beans>

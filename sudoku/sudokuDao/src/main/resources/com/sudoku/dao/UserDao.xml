@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.UserDao">
+
+    <!--配置resultMap，id="任意"，"类型：User"-->
+    <resultMap id="user" type="User">
+        <!--属性名、字段名、java类型-->
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="name" column="name" javaType="String"/>
+        <result property="password" column="password" javaType="String"/>
+        <result property="sex" column="sex" javaType="String"/>
+        <result property="age" column="age" javaType="Integer"/>
+        <result property="phone" column="phone" javaType="String"/>
+        <result property="email" column="email" javaType="String"/>
+        <result property="headPhoto" column="head_photo" javaType="String"/>
+        <result property="idNumber" column="id_number" javaType="String"/>
+        <result property="idImg" column="id_img" javaType="String"/>
+    </resultMap>
+
+
+    <!--id必须与方法名保持一致，parameterType=“参数类型”-->
+    <!--{id}、{name}、{sex}、{age}为实体类User的属性名-->
+    <insert id="insert" parameterType="User">
+        insert into user(name,password,sex,age,phone,head_photo,id_number,email,id_img)
+        values(#{name},#{password},#{sex},#{age},#{phone},#{headPhoto},#{idNumber},#{email},#{idImg})
+    </insert>
+
+    <update id="update" parameterType="User">
+        <!--字段名=#{属性名}-->
+        update user set name =#{name},password=#{password},sex=#{sex},age=#{age},phone=#{phone},head_photo=#{headPhoto}
+                         id_number=#{idNumber},email=#{email},id_img=#{idImg}where id =#{id}
+    </update>
+
+    <select id="selectById" parameterType="int" resultMap="user">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="selectByName" parameterType="String" resultMap="user">
+        select * from user where name=#{name}
+    </select>
+
+    <select id="selectAll" resultMap="user">
+        select * from user
+    </select>
+
+</mapper>

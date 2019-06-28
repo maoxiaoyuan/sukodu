@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sudoku.dao.CommentDao">
+
+    <resultMap id="commentResultMap" type="Comment">
+        <id property="cid" column="id" javaType="Integer"></id>
+        <result property="createTime" column="createtime" jdbcType="DATE" javaType="java.util.Date"></result>
+        <result property="commentContent" column="comment_content" javaType="String"></result>
+        <association property="user" column="user_id" javaType="User"
+                     select="com.sudoku.dao.UserDao.selectById"></association>
+        <association property="story" column="story_id" javaType="Story"
+                     select="com.sudoku.dao.StoryDao.selectStoryById"></association>
+    </resultMap>
+    <select id="selectCoutById" parameterType="Integer" resultType="int">
+		select count(*) from comment where story_id = #{sid}
+	</select>
+    <select id="selectCommentByStoryId" parameterType="Integer" resultMap="commentResultMap">
+		select * from comment where story_id =#{sid} order by(createtime) desc
+	</select>
+
+    <insert id="insertComment" parameterType="Comment" useGeneratedKeys="true" keyProperty="cid">
+		insert into comment(story_id,user_id,createtime,comment_content)
+		values(#{story.sid},#{user.id},#{createTime},#{commentContent})
+	</insert>
+    <delete id="deleteComment" parameterType="Comment">
+        delete from comment where story_id=#{story.sid} and user_id=#{user.id}
+    </delete>
+</mapper>

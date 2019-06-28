@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>sudoku</artifactId>
+        <groupId>com.sudoku</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sudokuBiz</artifactId>
+
+    <!--
+    事务层依赖包:dao、spring-aop、spring-tx、asp ectjweaver
+    -->
+    <dependencies>
+        <!--sudokuDao-->
+        <dependency>
+            <groupId>com.sudoku</groupId>
+            <artifactId>sudokuDao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--spring-aop-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!--spring-tx-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!--aspectjweaver-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sudoku</groupId>
+            <artifactId>sudokuBiz</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--使用邮箱发送验证码-->
+        <!--mail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+        <!-- activation -->
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+
+    </dependencies>
+
+</project>

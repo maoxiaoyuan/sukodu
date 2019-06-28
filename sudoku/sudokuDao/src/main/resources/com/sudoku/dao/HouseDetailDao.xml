@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.HouseDetailDao">
+
+    <resultMap id="houseDetail" type="HouseDetail">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="price" column="price" javaType="Double"/>
+        <result property="name" column="name" javaType="String"/>
+        <result property="maxTenants" column="max_tenants" javaType="Integer"/>
+        <result property="roomDescribe" column="room_describe" javaType="String"/>
+        <result property="houseId" column="house_id" javaType="Integer"/>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="java.util.List" useGeneratedKeys="false">
+        insert into house_type(name,price,max_tenants,room_describe,house_id)values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.name},#{item.price},#{item.maxTenants},#{item.roomDescribe},#{item.houseId})
+        </foreach>
+    </insert>
+
+    <select id="selectByHouseId" parameterType="Integer" resultMap="houseDetail">
+        select * from house_type where house_id=#{houseId}
+    </select>
+
+
+</mapper>

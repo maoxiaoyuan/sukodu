@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sudoku.dao.StoryDao">
+    <resultMap type="Story" id="storyResultMap">
+        <id column="id" property="sid" javaType="INTEGER"></id>
+        <result property="createTime" column="createtime" jdbcType="DATE" javaType="java.util.Date"></result>
+        <result property="storyTitle" column="story_title" javaType="String"></result>
+        <result property="storyContent" column="story_content" javaType="String"></result>
+        <result property="tourCity" column="tour_city" javaType="String"></result>
+        <result property="img01" column="img01" javaType="String"></result>
+        <result property="img02" column="img02" javaType="String"></result>
+        <result property="img03" column="img03" javaType="String"></result>
+        <result property="img04" column="img04" javaType="String"></result>
+        <result property="img05" column="img05" javaType="String"></result>
+        <result property="img06" column="img06" javaType="String"></result>
+        <association property="user" column="user_id" javaType="User"
+                     select="com.sudoku.dao.UserDao.selectById"></association>
+        <association property="house" column="house_id" javaType="HouseBasicInfo"
+                     select="com.sudoku.dao.HouseBasicInfoDao.selectById"></association>
+    </resultMap>
+
+    <select id="selectStoryById" parameterType="int" resultMap="storyResultMap">
+		select * from story where id=#{id}
+	</select>
+
+    <select id="selectStoryByUserId" parameterType="int" resultMap="storyResultMap">
+		select * from story where user_id=#{uid} order by (createtime) desc
+	</select>
+
+    <select id="selectAllStory" resultMap="storyResultMap">
+		select * from story order by id desc
+	</select>
+
+    <insert id="insertStory" parameterType="Story" useGeneratedKeys="true" keyProperty="sid">
+		insert into story(createtime,story_title,story_content,tour_city,user_id,house_id,img01,img02,img03,img04,img05,img06)
+		values(#{createTime},#{storyTitle},#{storyContent},#{tourCity},#{user.id},#{house.id},#{img01},#{img02},#{img03},#{img04},#{img05},#{img06})
+	</insert>
+
+    <delete id="deleteStoryById" parameterType="Integer">
+        delete from story where id=#{sid}
+    </delete>
+
+</mapper>

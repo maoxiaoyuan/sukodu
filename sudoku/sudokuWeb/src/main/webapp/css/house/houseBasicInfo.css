@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.container-fluid .logo-bg{
+    background: #20b2aa;
+}
+.container-fluid .logo{
+    margin:20px 0px 0px 20px;
+    height:100px;
+}uo
+.container-fluid .logo img{
+    width:55%;
+    height:70%;
+}
+.content{
+    margin-top: 270px;
+}
+.content .container .row{
+    /*border:1px solid black;*/
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.content .container .row lable span{
+    margin-right: 20px;
+}
+.content .container .row select{
+    margin-right: 5px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.li_style{
+    height:70px;
+    width:230px;
+    border: 0px;
+    background:#20b2aa ;
+}
+.li_font_style{
+    font-size:120px;
+    color:white;
+    position: relative;
+    top:-39px;
+    left:-80px;
+}
+.li_content_style{
+    position: relative;
+    top:-135px;
+    left:90px;
+}
+.li_img_style{
+    position: relative;
+    top:-140px;
+    left: -70px;
+    width: 40px;
+    height: 40px;
+}
+.file-box{
+    display: inline-block;
+    position: relative;
+    padding: 3px 5px;
+    overflow: hidden;
+    color:#fff;
+    top:30px;
+}
+.file-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+.upload_photo{
+
+    margin-left: -10px;
+}
+.photo{
+    width:100px;
+    height:100px;
+    margin: 10px;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.FacilityDao">
+
+    <resultMap id="facility" type="Facility">
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="houseId" column="house_id" javaType="Integer"/>
+        <result property="WLAN" column="WLAN" javaType="Integer"/>
+        <result property="heating" column="heating" javaType="Integer"/>
+        <result property="airConditioner" column="air_conditioner" javaType="Integer"/>
+        <result property="fireplace" column="fireplace" javaType="Integer"/>
+        <result property="iron" column="iron" javaType="Integer"/>
+        <result property="hairDryer" column="hair_dryer" javaType="Integer"/>
+        <result property="washingMachine" column="washing_machine" javaType="Integer"/>
+        <result property="dryer" column="dryer" javaType="Integer"/>
+        <result property="kitchen" column="kitchen" javaType="Integer"/>
+        <result property="bathroom" column="bathroom" javaType="Integer"/>
+        <result property="toilet" column="toilet" javaType="Integer"/>
+        <result property="livingRoom" column="living_room" javaType="Integer"/>
+        <result property="swimmingPool" column="swimming_pool" javaType="Integer"/>
+        <result property="fitnessRoom" column="fitness_room" javaType="Integer"/>
+
+    </resultMap>
+
+
+    <insert id="insert" parameterType="Facility">
+        insert into house_facility(house_id,WLAN,heating,air_conditioner,fireplace,iron,hair_dryer,washing_machine,
+                             dryer,kitchen,bathroom,toilet,living_room,swimming_pool,fitness_room)
+                    values (#{houseId},#{WLAN},#{heating},#{airConditioner},#{fireplace},#{iron},#{hairDryer},#{washingMachine},
+                             #{dryer},#{kitchen},#{bathroom},#{toilet},#{livingRoom},#{swimmingPool},#{fitnessRoom})
+    </insert>
+
+    <select id="selectByHouseId" parameterType="Integer" resultMap="facility">
+        select * from house_facility where house_id=#{houseId}
+    </select>
+
+
+</mapper>

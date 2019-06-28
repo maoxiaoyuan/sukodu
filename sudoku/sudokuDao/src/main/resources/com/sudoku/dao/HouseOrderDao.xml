@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL映射文件-->
+<!--命名空间：dao接口的名字-->
+<mapper namespace="com.sudoku.dao.HouseOrderDao">
+
+    <resultMap id="HouseOrder" type="HouseOrder">
+        <id property="orderId" column="order_id" javaType="String"/>
+        <result property="orderUserId" column="order_user_id" javaType="String"/>
+        <result property="orderHouseId" column="order_house_id" javaType="String"/>
+        <result property="orderTime" column="order_time" javaType="java.util.Date"/>
+        <result property="rentNum" column="rent_num" javaType="Integer"/>
+        <result property="bookStartTime" column="book_start_time" javaType="java.util.Date"/>
+        <result property="bookEndTime" column="book_end_time" javaType="java.util.Date"/>
+        <result property="totalPrice" column="total_price" javaType="Double"/>
+        <result property="status" column="status" javaType="String"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="HouseOrder">
+        insert into house_order(order_id,order_user_id,order_house_id,rent_num,order_time,book_start_time,book_end_time,total_price,status)
+                    values (#{orderId},#{orderUserId},#{orderHouseId},#{rentNum},#{orderTime},
+                                        #{bookStartTime},#{bookEndTime},#{totalPrice},#{status})
+    </insert>
+
+    <update id="update" parameterType="HouseOrder">
+        update house_order set order_user_id=#{orderUserId},order_house_id=#{orderHouseId},rent_num=#{rentNum},order_time=#{orderTime},
+                            book_start_time=#{bookStartTime},book_end_time=#{bookEndTime},total_price=#{totalPrice},status=#{status}
+                            where order_id=#{orderId}
+    </update>
+
+    <delete id="delete" parameterType="String">
+        delete from house_order where order_id=#{orderId}
+    </delete>
+
+    <select id="selectById" parameterType="String" resultMap="HouseOrder">
+        select * from house_order where order_id=#{orderId}
+    </select>
+
+    <select id="selectByUser" parameterType="String" resultMap="HouseOrder">
+        select * from house_order where order_user_id=#{orderUserId}
+    </select>
+
+    <select id="selectByHouse" parameterType="String" resultMap="HouseOrder">
+        select * from house_order where order_house_id=#{orderHouseId}
+    </select>
+</mapper>

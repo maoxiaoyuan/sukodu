@@ -1,0 +1,47 @@
+﻿<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--关联spring-dao文件-->
+    <import resource="spring-dao.xml"></import>
+
+    <!--开启自动扫描-->
+    <context:component-scan base-package="com.sudoku.biz"></context:component-scan>
+
+    <!--打开aspectj自动代理-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <!--配置声明式事务-->
+    <!--声明事务管理器-->
+    <bean id="transationMananger" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--声明通知-->
+    <tx:advice id="txAdvice" transaction-manager="transationMananger">
+        <tx:attributes>
+            <!--get、find、select方法只读，其他方法提供事务-->
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="select*" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--关联通知和切入点-->
+    <aop:config>
+        <!--声明切入点-->
+        <!--表达式是：任意返回值 com.user.service 任意类的任意方法，任意返回值，对其进行过滤，过滤方法是txAdvice-->
+        <aop:pointcut id="txpc" expression="execution(* com.sudoku.biz.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txpc"/>
+    </aop:config>
+     <!--声明式事务配置完毕-->
+</beans>
